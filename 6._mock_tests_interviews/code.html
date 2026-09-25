@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#ffffff", "primary": "#0058be", "on-secondary-fixed-variant": "#3c475a", "secondary-fixed-dim": "#bcc7de", "on-background": "#191c1e", "inverse-primary": "#adc6ff", "surface-container-high": "#e6e8ea", "on-error": "#ffffff", "on-tertiary": "#ffffff", "error": "#ba1a1a", "surface-variant": "#e0e3e5", "primary-fixed": "#d8e2ff", "surface-dim": "#d8dadc", "error-container": "#ffdad6", "tertiary-container": "#00855b", "on-primary-fixed": "#001a42", "background": "#f7f9fb", "tertiary-fixed-dim": "#4edea3", "on-surface-variant": "#424754", "on-tertiary-container": "#f5fff6", "surface-container-low": "#f2f4f6", "surface-container-lowest": "#ffffff", "on-secondary-container": "#586377", "inverse-on-surface": "#eff1f3", "outline-variant": "#c2c6d6", "secondary-container": "#d5e0f8", "surface": "#f7f9fb", "primary-container": "#2170e4", "outline": "#727785", "surface-tint": "#005ac2", "on-error-container": "#93000a", "on-primary-fixed-variant": "#004395", "tertiary": "#006947", "on-secondary": "#ffffff", "inverse-surface": "#2d3133", "secondary-fixed": "#d8e3fb", "on-tertiary-fixed-variant": "#005236", "surface-container": "#eceef0", "primary-fixed-dim": "#adc6ff", "on-primary-container": "#fefcff", "on-tertiary-fixed": "#002113", "tertiary-fixed": "#6ffbbe", "surface-bright": "#f7f9fb", "on-secondary-fixed": "#111c2d", "on-surface": "#191c1e", "surface-container-highest": "#e0e3e5", "secondary": "#545f73" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xl": "2rem", "space-xs": "0.25rem", "gutter-mobile": "0.75rem", "gutter": "1rem", "space-lg": "1.5rem", "margin-tablet": "1.5rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script><style>@layer base { .pb-safe { padding-bottom: max(env(safe-area-inset-bottom, 0px), 0.75rem); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } body { font-family: 'Plus Jakarta Sans', sans-serif; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="flex items-center justify-between px-margin h-6 pt-1 text-on-surface-variant font-label-sm text-label-sm"><span class="font-semibold">9:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[18px]">battery_full</span></div></div><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Placement Tracker Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoDAYper6xj1kS9ePSuKa3IMEHHHMKnt3QDtnWIqtFbZfKNl6Xl7quoOQJSxKuezzvXErj4EQhQ2HER1zwhEgtg0PVqw73NPTlI5YW4cLzwZOTzeRhJWDXz48-H8y0qAqtdWnO-L7Y5Jr4-S8NMd8EMNiVYXkhc_Bj2O2nxU9KoCGqjj3ewjNrNXP1UXORm6N1UMamIT6d2wZ_JlJkL9ZTp43NzGpWdThKQdSFwtALFp2kYTIgMd6n6Q"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight">PrepTrack</span><span class="font-label-sm text-label-sm text-on-surface-variant">Mock Tests &amp; Interviews</span></div></div><div class="flex items-center gap-space-sm"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><a class="flex items-center justify-center w-11 h-11 rounded-full p-0.5 hover:ring-2 hover:ring-primary/20 transition-all" data-path="progress---profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC96lX0Pg3A5TItmcDXZd9AU9vlW6LcRFh-HyReYd4GvGZT6LD_SAfuY07mQVOwuDWfkR8romzm0_u1aW5JPZXs9pUcVjxp04eL33p6G8EAG0QEE9PrfGqNAybApUPIlNa50cjELPQfT8HK9oVqg5uHhpUapfBURnUSixsdhWim_7ES9vbtjl_KMFJKZysSGjbeo_e7GoHo26jskd4beKuqRPkM2d3Ij8-9wathZ8ewpuGFy0ovfcdjtQ"/></a></div></div></header><main class="flex-1 flex flex-col w-full bg-surface pt-22 pb-24 px-margin max-w-xl mx-auto"><div class="flex flex-col w-full gap-space-lg">
+<!-- Screen Context / Sparkle Header -->
+<div class="flex flex-col gap-space-xs pt-1">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Exam Readiness: 84%</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+        AI Coach Online
+      </span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">Placement Simulation &amp; Mocks</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Real-time test environments &amp; AI interview prep tailored to current hiring rubrics.</p>
+</div>
+<!-- Performance Insights Bento Card -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-br from-primary to-primary-container p-space-md text-on-primary shadow-md">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-on-primary/10 blur-xl pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-on-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+</div>
+<span class="font-label-md text-label-md tracking-wide uppercase text-primary-fixed">AI Performance Diagnostics</span>
+</div>
+<span class="text-primary-fixed font-label-sm text-label-sm">Updated Today</span>
+</div>
+<div class="mt-space-md grid grid-cols-1 sm:grid-cols-2 gap-space-sm relative z-10">
+<div class="bg-on-primary/15 backdrop-blur-md rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-on-primary/80">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">verified</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase">Strong In</span>
+</div>
+<p class="font-body-sm text-body-sm font-medium text-on-primary leading-snug">
+          Quantitative Aptitude &amp; Object Oriented Programming
+        </p>
+</div>
+<div class="bg-on-primary/15 backdrop-blur-md rounded-lg p-space-sm flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-on-primary/80">
+<span class="material-symbols-outlined text-[16px] text-error-container">flag</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase">Focus Area</span>
+</div>
+<p class="font-body-sm text-body-sm font-medium text-on-primary leading-snug">
+          Graph Algorithms &amp; Advanced Vocabulary
+        </p>
+</div>
+</div>
+</div>
+<!-- Active Simulation Tracks Section -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Active Simulation Tracks</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">4 Available</span>
+</div>
+<button class="font-label-md text-label-md text-primary font-semibold flex items-center gap-0.5 hover:underline">
+        Filter <span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+<!-- Track 1: Campus Mock Test -->
+<div class="group relative rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-all hover:shadow-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">apartment</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Service Core</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> -0.25 Neg Marking
+              </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1 truncate">
+              Full-Length Campus Mock Test
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">TCS / Accenture / Cognizant Pattern</p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-y-1 gap-x-3 py-1.5 px-3 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">timer</span>
+          60 Mins
+        </span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">fact_check</span>
+          50 Questions
+        </span>
+<span class="text-outline-variant">•</span>
+<span class="truncate">Quant, Logic, English, Tech</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center -space-x-2">
+<img class="w-7 h-7 rounded-full object-cover shadow-sm ring-2 ring-surface-container-lowest" data-alt="College engineering student studying with laptop, focused smiling headshot outdoors on campus lawn" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH2CAsT81nOenuVeu5a1EC0kC7jMRk5LzCRwLkCNg-deF3PWMl06atJ2V3NL8FkMrewiSEUN0z9ANK2-oLQ0tWZzdwzTB8-HPZZtIYDZt--aua3odO74x3g53oUOziU81A7E5UP_HnE4WE_Vu3YHj7Tgl5xKDpXs4QkRplyVjHi57vdmv_Ht00GHGOccBNl4ITdjMDrXgCcGg0Ec7v_7JBhvdStm-bWMDVsBVOSvJGBtGZcoDfH5J84g"/>
+<img class="w-7 h-7 rounded-full object-cover shadow-sm ring-2 ring-surface-container-lowest" data-alt="Young female software engineering recruit in smart casual attire smiling warmly in library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwE58Lyx_hCrDIgHTVXEQQy5ghOE51aiIjrikUeDPjxOOgNZt7lQXgRNUDS4qNswsW5gwTUPr4Ig2qCQQmDUUeXzx_QgEgvdtlK3NnHoSTtOSTkk5iQwLaRfM1vyLCh2oCg6mF-j76m1CJve_7MzmIK4K5hfN0udHYbnFUayq2lA1HhcTbx38C5BRoXJFxojkMAISRs_QGEIc_oIG-nO14wDsymv9VG3i32cXs7xGehPJOQD7pWJuxAQ"/>
+<div class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center font-label-sm text-label-sm text-on-surface-variant ring-2 ring-surface-container-lowest font-bold">
+            +1.2k
+          </div>
+<span class="ml-3 font-label-sm text-label-sm text-on-surface-variant">attempted this week</span>
+</div>
+<button class="px-space-md py-2.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center gap-1.5 shadow-sm active:scale-95 transition-all" onclick="startSimulation('Campus Mock Test')">
+<span>Start Test</span>
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Track 2: Product Coding Assessment -->
+<div class="group relative rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-all hover:shadow-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">terminal</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Tier-1 FAANG</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">Live IDE</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1 truncate">
+              Product Company Coding Assessment
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Amazon / Uber Style Challenge</p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-y-1 gap-x-3 py-1.5 px-3 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">hourglass_top</span>
+          90 Mins
+        </span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">data_object</span>
+          3 Algorithmic Problems
+        </span>
+<span class="text-outline-variant">•</span>
+<span class="truncate">DSA + Optimization</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="inline-flex items-center gap-1.5 font-label-sm text-label-sm text-tertiary">
+<span class="material-symbols-outlined text-[16px]">memory</span>
+          Memory &amp; Time limits enforced
+        </span>
+<button class="px-space-md py-2.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg flex items-center gap-1.5 shadow-sm active:scale-95 transition-all" onclick="startSimulation('Coding Assessment')">
+<span>Start Test</span>
+<span class="material-symbols-outlined text-[18px]">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Track 3: 1-on-1 AI Tech Interview -->
+<div class="group relative rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-all hover:shadow-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container text-on-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">record_voice_over</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">mic</span> Audio Simulation
+              </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Dynamic Hints</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1 truncate">
+              1-on-1 AI Technical Interview
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">DSA &amp; System Design Breakdown</p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-y-1 gap-x-3 py-1.5 px-3 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">schedule</span>
+          30 Mins
+        </span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">code</span>
+          Speech &amp; Live Coding
+        </span>
+<span class="text-outline-variant">•</span>
+<span>Instant Rubric Feedback</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">headphones</span>
+          Earphones recommended
+        </span>
+<button class="px-space-md py-2.5 rounded-xl bg-primary-container text-on-primary-container font-label-lg text-label-lg flex items-center gap-1.5 shadow-sm active:scale-95 transition-all" onclick="startSimulation('AI Technical Interview')">
+<span>Begin Interview</span>
+<span class="material-symbols-outlined text-[18px]">smart_toy</span>
+</button>
+</div>
+</div>
+<!-- Track 4: HR Behavioral & Cultural Fit -->
+<div class="group relative rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-all hover:shadow-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">forum</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Behavioral Round</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">STAR Format</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1 truncate">
+              HR Behavioral &amp; Cultural Fit Simulation
+            </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Common HR questions &amp; leadership principles</p>
+</div>
+</div>
+</div>
+<div class="py-1.5 px-3 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0">insights</span>
+<span class="truncate">Evaluates Situation, Task, Action &amp; Result clarity</span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">sentiment_very_satisfied</span>
+          Confidence Score Tracker
+        </span>
+<button class="px-space-md py-2.5 rounded-xl bg-surface-container-highest text-on-surface font-label-lg text-label-lg flex items-center gap-1.5 active:scale-95 transition-all hover:bg-surface-dim" onclick="startSimulation('HR Simulation')">
+<span>Practice HR</span>
+<span class="material-symbols-outlined text-[18px]">keyboard_arrow_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Recent Mock Test History & Performance Summary -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">history</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Recent Mock History</h3>
+</div>
+<a class="font-label-md text-label-md text-primary font-semibold hover:underline" href="#">View All</a>
+</div>
+<!-- History Tile 1: Passed Test -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-0.5 rounded-full bg-on-tertiary-container text-tertiary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Passed
+            </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">2 days ago</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1 truncate">
+            Tier-1 Technical Assessment #4
+          </h4>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<div class="flex items-baseline gap-0.5">
+<span class="font-headline-lg text-headline-lg font-extrabold text-tertiary">86</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/100</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Score</span>
+</div>
+</div>
+<!-- Quick Metrics Grid -->
+<div class="grid grid-cols-2 gap-space-sm pt-1">
+<div class="rounded-lg bg-surface-container-low p-2.5 flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">leaderboard</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cohort Percentile</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">94th %ile</span>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container-low p-2.5 flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">military_tech</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Batch Rank</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">#14<span class="font-body-sm text-body-sm font-normal text-on-surface-variant">/320</span></span>
+</div>
+</div>
+</div>
+<!-- Progress Meter -->
+<div class="flex flex-col gap-1 mt-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Accuracy Rate</span>
+<span class="font-semibold text-tertiary">88.4%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-tertiary rounded-full transition-all duration-500" style="width: 86%;"></div>
+</div>
+</div>
+<div class="pt-1">
+<a class="w-full py-2.5 rounded-lg bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold flex items-center justify-center gap-1 hover:bg-secondary-fixed transition-colors" href="#">
+<span>View Result &amp; Detailed Analysis</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- History Tile 2: Needs Review Test -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> Needs Review
+            </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">5 days ago</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mt-1 truncate">
+            Speed Quant Mock #7
+          </h4>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<div class="flex items-baseline gap-0.5">
+<span class="font-headline-lg text-headline-lg font-extrabold text-on-surface">72</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/100</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Score</span>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-error">timer_off</span>
+          Time Pressure: 14 Questions Skipped
+        </span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">71st %ile</span>
+</div>
+<div class="pt-1">
+<a class="w-full py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-1 hover:bg-surface-container-high transition-colors" href="#">
+<span>View Result</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Motivational Footer Tip Card -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-space-md mb-2">
+<div class="w-12 h-12 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Weekly Mock Challenge</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Complete 2 more simulations this week to unlock the Google mock question bank.</p>
+</div>
+</div>
+</div>
+<script>
+  const screenPaths = {
+    'home---dashboard': '../3._home_dashboard/code.html',
+    'preparation-tracker': '../4._preparation_tracker/code.html',
+    'practice-(aptitude-&-coding)': '../5._aptitude_coding_practice/code.html',
+    'mock-tests-&-interviews': '../6._mock_tests_interviews/code.html',
+    'progress---profile': '../7._progress_profile/code.html'
+  };
+
+  document.querySelectorAll('[data-path]').forEach((link) => {
+    const destination = screenPaths[link.dataset.path];
+    if (destination) link.href = destination;
+  });
+
+  function startSimulation(title) {
+    const feedbackToast = document.createElement('div');
+    feedbackToast.className = 'fixed bottom-20 left-1/2 -translate-x-1/2 px-4 py-2.5 rounded-full bg-inverse-surface text-inverse-on-surface font-label-md text-label-md shadow-xl flex items-center gap-2 z-50 animate-bounce';
+    feedbackToast.innerHTML = '<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">lock_clock</span> Initializing ' + title + '...';
+    document.body.appendChild(feedbackToast);
+
+    setTimeout(() => {
+      feedbackToast.remove();
+    }, 2400);
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(15,23,42,0.05)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 max-w-xl mx-auto px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] h-11 text-on-surface-variant hover:text-primary transition-colors" data-path="home---dashboard" href="#"><span class="material-symbols-outlined text-[24px]">dashboard</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-11 text-on-surface-variant hover:text-primary transition-colors" data-path="preparation-tracker" href="#"><span class="material-symbols-outlined text-[24px]">task_alt</span><span class="font-label-sm text-label-sm mt-0.5">Prep</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-11 text-on-surface-variant hover:text-primary transition-colors" data-path="practice-(aptitude-&amp;-coding)" href="#"><span class="material-symbols-outlined text-[24px]">code</span><span class="font-label-sm text-label-sm mt-0.5">Practice</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-11 transition-colors text-primary font-bold" data-path="mock-tests-&amp;-interviews" href="#"><span class="material-symbols-outlined text-[24px]">quiz</span><span class="font-label-sm text-label-sm mt-0.5">Mocks</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-11 text-on-surface-variant hover:text-primary transition-colors" data-path="progress---profile" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm mt-0.5">Profile</span></a></div></nav></body></html>

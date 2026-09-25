@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#ffffff", "primary": "#0058be", "on-secondary-fixed-variant": "#3c475a", "secondary-fixed-dim": "#bcc7de", "on-background": "#191c1e", "inverse-primary": "#adc6ff", "surface-container-high": "#e6e8ea", "on-error": "#ffffff", "on-tertiary": "#ffffff", "error": "#ba1a1a", "surface-variant": "#e0e3e5", "primary-fixed": "#d8e2ff", "surface-dim": "#d8dadc", "error-container": "#ffdad6", "tertiary-container": "#00855b", "on-primary-fixed": "#001a42", "background": "#f7f9fb", "tertiary-fixed-dim": "#4edea3", "on-surface-variant": "#424754", "on-tertiary-container": "#f5fff6", "surface-container-low": "#f2f4f6", "surface-container-lowest": "#ffffff", "on-secondary-container": "#586377", "inverse-on-surface": "#eff1f3", "outline-variant": "#c2c6d6", "secondary-container": "#d5e0f8", "surface": "#f7f9fb", "primary-container": "#2170e4", "outline": "#727785", "surface-tint": "#005ac2", "on-error-container": "#93000a", "on-primary-fixed-variant": "#004395", "tertiary": "#006947", "on-secondary": "#ffffff", "inverse-surface": "#2d3133", "secondary-fixed": "#d8e3fb", "on-tertiary-fixed-variant": "#005236", "surface-container": "#eceef0", "primary-fixed-dim": "#adc6ff", "on-primary-container": "#fefcff", "on-tertiary-fixed": "#002113", "tertiary-fixed": "#6ffbbe", "surface-bright": "#f7f9fb", "on-secondary-fixed": "#111c2d", "on-surface": "#191c1e", "surface-container-highest": "#e0e3e5", "secondary": "#545f73" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xl": "2rem", "space-xs": "0.25rem", "gutter-mobile": "0.75rem", "gutter": "1rem", "space-lg": "1.5rem", "margin-tablet": "1.5rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script><style>@layer base { .pb-safe { padding-bottom: max(env(safe-area-inset-bottom, 0px), 0.75rem); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } body { font-family: 'Plus Jakarta Sans', sans-serif; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background text-on-surface min-h-screen flex flex-col antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="flex items-center justify-between px-margin h-6 pt-1 text-on-surface-variant font-label-sm text-label-sm"><span class="font-semibold">9:41</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[18px]">battery_full</span></div></div><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Placement Tracker Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoDAYper6xj1kS9ePSuKa3IMEHHHMKnt3QDtnWIqtFbZfKNl6Xl7quoOQJSxKuezzvXErj4EQhQ2HER1zwhEgtg0PVqw73NPTlI5YW4cLzwZOTzeRhJWDXz48-H8y0qAqtdWnO-L7Y5Jr4-S8NMd8EMNiVYXkhc_Bj2O2nxU9KoCGqjj3ewjNrNXP1UXORm6N1UMamIT6d2wZ_JlJkL9ZTp43NzGpWdThKQdSFwtALFp2kYTIgMd6n6Q"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight">PrepTrack</span><span class="font-label-sm text-label-sm text-on-surface-variant">Preparation Tracker</span></div></div><div class="flex items-center gap-space-sm"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span></button><a class="flex items-center justify-center w-11 h-11 rounded-full p-0.5 hover:ring-2 hover:ring-primary/20 transition-all" data-path="progress---profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC96lX0Pg3A5TItmcDXZd9AU9vlW6LcRFh-HyReYd4GvGZT6LD_SAfuY07mQVOwuDWfkR8romzm0_u1aW5JPZXs9pUcVjxp04eL33p6G8EAG0QEE9PrfGqNAybApUPIlNa50cjELPQfT8HK9oVqg5uHhpUapfBURnUSixsdhWim_7ES9vbtjl_KMFJKZysSGjbeo_e7GoHo26jskd4beKuqRPkM2d3Ij8-9wathZ8ewpuGFy0ovfcdjtQ"/></a></div></div></header><main class="flex-1 flex flex-col w-full bg-surface pt-22 pb-24 px-margin max-w-xl mx-auto"><div class="flex flex-col w-full gap-space-lg">
+<!-- Header Banner & Motivational Momentum -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container p-space-md shadow-sm">
+<div class="flex items-start justify-between relative z-10">
+<div class="flex flex-col gap-space-xs max-w-[70%]">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm w-fit font-bold">
+<span class="material-symbols-outlined text-[14px]">bolt</span> ACTIVE SPRINT
+        </span>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">Study &amp; Preparation Tracker</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Stay consistent with daily campus milestones</p>
+</div>
+<!-- Streak Pill -->
+<div class="flex flex-col items-end gap-1">
+<div class="flex items-center gap-1 px-3 py-1.5 rounded-full bg-primary-fixed text-on-primary-fixed shadow-sm">
+<span class="text-sm">🔥</span>
+<span class="font-label-md text-label-md font-bold">12-Day Streak!</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80 mr-1">3 days to Bronze Shield</span>
+</div>
+</div>
+<!-- Motivational Background Vector Texture -->
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+</div>
+<!-- Weekly Goal & Today's Time Log Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Weekly Study Hours Goal Progress -->
+<div class="md:col-span-2 rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">timelapse</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Weekly Goal</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Target: 30 Hours / week</span>
+</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">80%</span>
+</div>
+<!-- Bar & Details -->
+<div class="space-y-1.5">
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-tertiary-container rounded-full transition-all duration-700" style="width: 80%"></div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-medium text-on-surface">24 / 30 Hours logged</span>
+<span class="text-tertiary font-bold">+2.1 hrs ahead of pace</span>
+</div>
+</div>
+</div>
+<!-- Daily Study Time Log Widget -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">Today's Log</span>
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+</div>
+<div class="my-1 flex items-baseline gap-1.5">
+<span class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface font-black">3.5</span>
+<span class="font-body-md text-body-md text-on-surface-variant font-medium">hrs today</span>
+</div>
+<div class="flex items-center gap-1 text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>Goal reached: 3h min</span>
+</div>
+</div>
+</div>
+<!-- Category Breakdown Section -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-0.5">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">pie_chart</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Category Mastery</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5 Tracked Tracks</span>
+</div>
+<div class="grid grid-cols-1 gap-space-xs">
+<!-- Category 1: Aptitude -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">calculate</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface leading-tight">Aptitude</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Quant, Logical Reasoning, Verbal</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg font-bold text-primary">78%</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">142/180 topics</p>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 78%"></div>
+</div>
+</div>
+<!-- Category 2: Coding & DSA -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface leading-tight">Coding &amp; DSA</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Arrays, Trees, Graphs, DP</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg font-bold text-primary">68%</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">110/160 questions</p>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-500" style="width: 68%"></div>
+</div>
+</div>
+<!-- Category 3: Technical Subjects -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">developer_board</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface leading-tight">Technical Subjects</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">OS, DBMS, Computer Networks</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">55%</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">22/40 topics</p>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-500" style="width: 55%"></div>
+</div>
+</div>
+<!-- Category 4: Communication & Soft Skills -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">record_voice_over</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface leading-tight">Communication &amp; Soft Skills</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">HR Rounds &amp; Group Discussions</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg font-bold text-tertiary">85%</span>
+<p class="font-label-sm text-label-sm text-tertiary font-medium">Ready</p>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full transition-all duration-500" style="width: 85%"></div>
+</div>
+</div>
+<!-- Category 5: Interview Preparation -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">architecture</span>
+</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface leading-tight">Interview Preparation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">System Design, Live Project Walkthroughs</p>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg font-bold text-primary">60%</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">In Progress</p>
+</div>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 60%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Bar & Filter Chips -->
+<div class="flex flex-col gap-space-sm pt-2">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">checklist</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Actionable Tasks</h2>
+</div>
+<!-- Add Custom Task Button -->
+<button class="flex items-center gap-1 px-3.5 py-2 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-sm hover:opacity-95 active:scale-95 transition-all" id="addTaskBtn">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Add Task</span>
+</button>
+</div>
+<!-- Filter Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 scrollbar-none">
+<button class="filter-chip px-3.5 py-1.5 rounded-full bg-on-surface text-on-primary font-label-md text-label-md font-semibold transition-all" data-filter="all">
+        All Tasks (12)
+      </button>
+<button class="filter-chip px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md font-medium hover:bg-surface-container-high transition-all" data-filter="pending">
+        Pending (5)
+      </button>
+<button class="filter-chip px-3.5 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md font-medium hover:bg-surface-container-high transition-all" data-filter="completed">
+        Completed (7)
+      </button>
+</div>
+</div>
+<!-- Task Items Container -->
+<div class="flex flex-col gap-space-xs" id="taskList">
+<!-- Task 1: Completed -->
+<div class="task-card p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex items-center justify-between gap-space-sm transition-all duration-300" data-status="completed">
+<div class="flex items-start gap-space-sm flex-1 min-w-0">
+<button aria-label="Mark pending" class="toggle-task-btn mt-0.5 w-6 h-6 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center flex-shrink-0 transition-transform active:scale-90">
+<span class="material-symbols-outlined text-[16px]">done</span>
+</button>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface-variant line-through truncate">Solve 10 Profit &amp; Loss Aptitude questions</span>
+<div class="flex items-center gap-2 mt-1">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/15 text-tertiary font-label-sm text-label-sm font-bold">
+              Completed today
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">+15 XP earned</span>
+</div>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+</div>
+<!-- Task 2: Pending (Hard Coding) -->
+<div class="task-card p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm transition-all duration-300" data-status="pending">
+<div class="flex items-start gap-space-sm flex-1 min-w-0">
+<button aria-label="Toggle Complete" class="toggle-task-btn mt-0.5 w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-primary/20 flex items-center justify-center flex-shrink-0 transition-all">
+<span class="material-symbols-outlined text-[16px] opacity-0 hover:opacity-100">check</span>
+</button>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Practice 2 Hard Tree Traversal coding problems</span>
+<div class="flex items-center gap-2 mt-1">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+              High Priority
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">+25 XP</span>
+</div>
+</div>
+</div>
+<button class="mark-btn w-full sm:w-auto px-3.5 py-1.5 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold hover:bg-primary hover:text-on-primary active:scale-95 transition-all text-center">
+        Mark as Completed
+      </button>
+</div>
+<!-- Task 3: Pending (OS Subjects) -->
+<div class="task-card p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm transition-all duration-300" data-status="pending">
+<div class="flex items-start gap-space-sm flex-1 min-w-0">
+<button aria-label="Toggle Complete" class="toggle-task-btn mt-0.5 w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-primary/20 flex items-center justify-center flex-shrink-0 transition-all">
+<span class="material-symbols-outlined text-[16px] opacity-0 hover:opacity-100">check</span>
+</button>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Revise Operating System Deadlocks &amp; Semaphores</span>
+<div class="flex items-center gap-2 mt-1">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+              Core Technical
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">+20 XP</span>
+</div>
+</div>
+</div>
+<button class="mark-btn w-full sm:w-auto px-3.5 py-1.5 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold hover:bg-primary hover:text-on-primary active:scale-95 transition-all text-center">
+        Mark as Completed
+      </button>
+</div>
+<!-- Task 4: Pending (HR Prep) -->
+<div class="task-card p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm transition-all duration-300" data-status="pending">
+<div class="flex items-start gap-space-sm flex-1 min-w-0">
+<button aria-label="Toggle Complete" class="toggle-task-btn mt-0.5 w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-primary/20 flex items-center justify-center flex-shrink-0 transition-all">
+<span class="material-symbols-outlined text-[16px] opacity-0 hover:opacity-100">check</span>
+</button>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Record 2-min self-introduction video for HR round</span>
+<div class="flex items-center gap-2 mt-1">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+              Soft Skills
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">+10 XP</span>
+</div>
+</div>
+</div>
+<button class="mark-btn w-full sm:w-auto px-3.5 py-1.5 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold hover:bg-primary hover:text-on-primary active:scale-95 transition-all text-center">
+        Mark as Completed
+      </button>
+</div>
+</div>
+<!-- Micro Task Addition Modal / Drawer (Hidden by default) -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex items-end justify-center" id="addTaskDrawer">
+<div class="w-full max-w-xl bg-surface-container-lowest rounded-t-xl p-space-lg shadow-xl animate-in slide-in-from-bottom flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">New Study Goal</h3>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high" id="closeDrawerBtn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<label class="font-label-md text-label-md text-on-surface-variant">Task Title</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary/40" id="customTaskTitle" placeholder="e.g. Implement Dijkstra Algorithm in Java" type="text"/>
+<label class="font-label-md text-label-md text-on-surface-variant">Category</label>
+<div class="grid grid-cols-2 gap-2">
+<button class="drawer-cat-btn py-2 px-3 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold active:bg-primary active:text-on-primary" type="button">Coding &amp; DSA</button>
+<button class="drawer-cat-btn py-2 px-3 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold active:bg-primary active:text-on-primary" type="button">Aptitude</button>
+<button class="drawer-cat-btn py-2 px-3 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold active:bg-primary active:text-on-primary" type="button">Tech Core</button>
+<button class="drawer-cat-btn py-2 px-3 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold active:bg-primary active:text-on-primary" type="button">HR / Soft Skills</button>
+</div>
+</div>
+<button class="w-full py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow-md hover:opacity-95 active:scale-98 transition-transform" id="saveCustomTaskBtn">
+        Create Milestone
+      </button>
+</div>
+</div>
+<!-- Interactive Script for Task Toggling, Filter Switching and Confetti Pulse -->
+<script>
+  const screenPaths = {
+    'home---dashboard': '../3._home_dashboard/code.html',
+    'preparation-tracker': '../4._preparation_tracker/code.html',
+    'practice-(aptitude-&-coding)': '../5._aptitude_coding_practice/code.html',
+    'mock-tests-&-interviews': '../6._mock_tests_interviews/code.html',
+    'progress---profile': '../7._progress_profile/code.html'
+  };
+
+  document.querySelectorAll('[data-path]').forEach((link) => {
+    const destination = screenPaths[link.dataset.path];
+    if (destination) link.href = destination;
+  });
+
+    (function() {
+      // 1. Task Completion Interactive Logic
+      const markButtons = document.querySelectorAll('.mark-btn');
+      markButtons.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          const card = this.closest('.task-card');
+          card.setAttribute('data-status', 'completed');
+          
+          const textSpan = card.querySelector('.font-body-md');
+          textSpan.classList.add('line-through', 'text-on-surface-variant');
+          textSpan.classList.remove('text-on-surface');
+
+          // Change button to completed state badge
+          this.outerHTML = `
+            <div class="w-8 h-8 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0 animate-bounce">
+              <span class="material-symbols-outlined text-[18px]">verified</span>
+            </div>
+          `;
+
+          const toggleBtn = card.querySelector('.toggle-task-btn');
+          toggleBtn.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+          toggleBtn.classList.add('bg-tertiary', 'text-on-tertiary');
+          toggleBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">done</span>';
+        });
+      });
+
+      // 2. Filter Logic
+      const filterChips = document.querySelectorAll('.filter-chip');
+      const taskCards = document.querySelectorAll('.task-card');
+
+      filterChips.forEach(chip => {
+        chip.addEventListener('click', function() {
+          filterChips.forEach(c => {
+            c.classList.remove('bg-on-surface', 'text-on-primary', 'font-semibold');
+            c.classList.add('bg-surface-container', 'text-on-surface-variant', 'font-medium');
+          });
+
+          this.classList.remove('bg-surface-container', 'text-on-surface-variant', 'font-medium');
+          this.classList.add('bg-on-surface', 'text-on-primary', 'font-semibold');
+
+          const filter = this.getAttribute('data-filter');
+
+          taskCards.forEach(card => {
+            const cardStatus = card.getAttribute('data-status');
+            if (filter === 'all' || cardStatus === filter) {
+              card.style.display = 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // 3. Custom Task Modal Drawer
+      const addTaskBtn = document.getElementById('addTaskBtn');
+      const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+      const drawer = document.getElementById('addTaskDrawer');
+      const saveTaskBtn = document.getElementById('saveCustomTaskBtn');
+      const taskList = document.getElementById('taskList');
+      const customTitleInput = document.getElementById('customTaskTitle');
+
+      if (addTaskBtn && drawer && closeDrawerBtn) {
+        addTaskBtn.addEventListener('click', () => drawer.classList.remove('hidden'));
+        closeDrawerBtn.addEventListener('click', () => drawer.classList.add('hidden'));
+
+        drawer.addEventListener('click', (e) => {
+          if (e.target === drawer) drawer.classList.add('hidden');
+        });
+
+        saveTaskBtn.addEventListener('click', () => {
+          const title = customTitleInput.value.trim() || "Complete LeetCode Daily Challenge";
+          const newTaskEl = document.createElement('div');
+          newTaskEl.setAttribute('data-status', 'pending');
+          newTaskEl.className = 'task-card p-space-md bg-surface-container-lowest rounded-xl shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm transition-all duration-300';
+          newTaskEl.innerHTML = `
+            <div class="flex items-start gap-space-sm flex-1 min-w-0">
+              <button class="toggle-task-btn mt-0.5 w-6 h-6 rounded-full bg-surface-container-high text-on-surface-variant hover:bg-primary/20 flex items-center justify-center flex-shrink-0 transition-all">
+                <span class="material-symbols-outlined text-[16px] opacity-0 hover:opacity-100">check</span>
+              </button>
+              <div class="flex flex-col min-w-0">
+                <span class="font-body-md text-body-md font-semibold text-on-surface truncate">${title}</span>
+                <div class="flex items-center gap-2 mt-1">
+                  <span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+                    New Task
+                  </span>
+                  <span class="font-label-sm text-label-sm text-on-surface-variant font-medium">+15 XP</span>
+                </div>
+              </div>
+            </div>
+            <button class="mark-btn w-full sm:w-auto px-3.5 py-1.5 rounded-lg bg-surface-container text-primary font-label-md text-label-md font-bold hover:bg-primary hover:text-on-primary active:scale-95 transition-all text-center">
+              Mark as Completed
+            </button>
+          `;
+          
+          taskList.prepend(newTaskEl);
+          customTitleInput.value = '';
+          drawer.classList.add('hidden');
+
+          // Attach listener to newly injected button
+          const newBtn = newTaskEl.querySelector('.mark-btn');
+          newBtn.addEventListener('click', function() {
+            newTaskEl.setAttribute('data-status', 'completed');
+            const span = newTaskEl.querySelector('.font-body-md');
+            span.classList.add('line-through', 'text-on-surface-variant');
+            this.outerHTML = `
+              <div class="w-8 h-8 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-[18px]">verified</span>
+              </div>
+            `;
+          });
+        });
+      }
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(15,23,42,0.05)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 max-w-xl mx-auto px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] h-11 text-on-surface-variant hover:text-primary transition-colors" data-path="home---dashboard" href="#"><span class="material-symbols-outlined text-[24px]">dashboard</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-11 transition-colors text-primary font-bold" data-path="preparation-tracker" href="#"><span class="material-symbols-outlined text-[24px]">task_alt</span><span class="font-label-sm text-label-sm mt-0.5">Prep</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-11 text-on-surface-variant hover:text-primary transition-colors" data-path="practice-(aptitude-&amp;-coding)" href="#"><span class="material-symbols-outlined text-[24px]">code</span><span class="font-label-sm text-label-sm mt-0.5">Practice</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-11 text-on-surface-variant hover:text-primary transition-colors" data-path="mock-tests-&amp;-interviews" href="#"><span class="material-symbols-outlined text-[24px]">quiz</span><span class="font-label-sm text-label-sm mt-0.5">Mocks</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-11 text-on-surface-variant hover:text-primary transition-colors" data-path="progress---profile" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm mt-0.5">Profile</span></a></div></nav></body></html>
