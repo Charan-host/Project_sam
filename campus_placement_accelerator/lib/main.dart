@@ -285,15 +285,64 @@ class PlacementApi {
     return decoded;
   }
 
-  Future<Map<String, dynamic>> login({required String email, required String password}) async {
-    final result = await _request('POST', '/auth/login', {'email': email, 'password': password});
+  Future<Map<String, dynamic>> login({
+    required String email,
+    required String password,
+    }) async {
+      final result = await _request(
+      'POST',
+      '/v1/auth/login',
+      {
+        'email': email,
+        'password': password,
+      },
+    );
+
     token = result['token'] as String?;
-    return {...result, 'user': {...result['user'] as Map<String, dynamic>, '_token': token}};
+
+    return {
+      ...result,
+      'user': {
+        ...result['user'] as Map<String, dynamic>,
+        '_token': token,
+      },
+    };
   }
-  Future<Map<String, dynamic>> signup({required String name, required String email, required String password, String college = '', String course = '', int? graduationYear, String targetRole = '', String skillLevel = 'Beginner'}) async {
-    final result = await _request('POST', '/auth/signup', {'name': name, 'email': email, 'password': password, 'college': college, 'course': course, 'graduationYear': graduationYear, 'targetRole': targetRole, 'skillLevel': skillLevel});
+
+  Future<Map<String, dynamic>> signup({
+    required String name,
+    required String email,
+    required String password,
+    String college = '',
+    String course = '',
+    int? graduationYear,
+    String targetRole = '',
+    String skillLevel = 'Beginner',
+  }) async {
+    final result = await _request(
+      'POST',
+      '/v1/auth/signup',
+      {
+        'name': name,
+        'email': email,
+        'password': password,
+        'college': college,
+        'course': course,
+        'graduationYear': graduationYear,
+        'targetRole': targetRole,
+        'skillLevel': skillLevel,
+      },
+    );
+
     token = result['token'] as String?;
-    return {...result, 'user': {...result['user'] as Map<String, dynamic>, '_token': token}};
+
+    return {
+      ...result,
+      'user': {
+        ...result['user'] as Map<String, dynamic>,
+        '_token': token,
+      },
+    };
   }
   Future<Map<String, dynamic>> currentUser() async => (await _request('GET', '/me'))['user'] as Map<String, dynamic>;
   Future<Map<String, dynamic>> dashboard() async => await _request('GET', '/dashboard?timezoneOffset=${DateTime.now().timeZoneOffset.inMinutes}');
